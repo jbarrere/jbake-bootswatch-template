@@ -12,11 +12,11 @@
 			<i class="fa fa-calendar-o"></i>
 			&nbsp;${content.date?string("dd MMMM yyyy")}
 			&nbsp;&nbsp;&nbsp;<i class="fa fa-bullhorn"></i>&nbsp;
-			<a href="${content.uri}#disqus_thread" data-disqus-identifier="${content.uri}">
+			<a href="#disqus_thread" data-disqus-identifier="${content.uri}">
 				${config.disqus_no_comments}
 			</a>
 			<p><em>Tags: </em><#list content.tags as tag>
-				<a href="/tags/${tag?trim?replace(' ','-')}.html"><span class="label label-tag">${tag}</label></a>
+				<a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>tags/${tag?trim?replace(' ','-')}.html"><span class="label label-tag">${tag}</label></a>
 			</#list></p>
 		</p>
 

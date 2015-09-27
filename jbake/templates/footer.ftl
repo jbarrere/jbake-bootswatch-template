@@ -13,7 +13,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="/js/run_prettify.js"></script>
+    <script src="<#if (content.rootpath)??>${content.rootpath}<#else></#if>js/run_prettify.js"></script>
 
 
     <script type="text/javascript">

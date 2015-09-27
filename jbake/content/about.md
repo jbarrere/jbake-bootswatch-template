@@ -4,4 +4,4 @@ type=page
 status=published
 ~~~~~~
 
-## About your blog
+About your blog

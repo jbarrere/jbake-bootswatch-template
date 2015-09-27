@@ -7,7 +7,7 @@
 	</div>
 	<div class="col-lg-4">
 	<p><#list alltags as tag>
-		<a href="/tags/${tag?trim?replace(' ','-')}.html"><span class="label label-tag">${tag}</label></a>
+		<a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>tags/${tag?trim?replace(' ','-')}.html"><span class="label label-tag">${tag}</label></a>
 	</#list></p>
 	<h2>Tag: ${tag}</h2>
 	<#list tag_posts as post>
@@ -22,7 +22,7 @@
 			<ul class="list-group">
 		</#if>
 
-		<li class="list-group-item">${post.date?string(config.tags_dateformat)} - <a href="/${post.uri}">${post.title}</a></li>
+		<li class="list-group-item">${post.date?string(config.tags_dateformat)} - <a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${post.uri}">${post.title}</a></li>
 		<#assign last_month = post.date?string("MMMM yyyy")>
 	</#list>
 	</div>
