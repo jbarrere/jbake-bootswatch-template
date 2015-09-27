@@ -13,6 +13,7 @@
           <ul class="nav navbar-nav">
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>index.html">home</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>about.html">about</a></li>
+            <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>archive.html">archive</a></li>
             <li><a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${config.feed_file}">subscribe</a></li>
           </ul>
         </div><!--/.nav-collapse -->

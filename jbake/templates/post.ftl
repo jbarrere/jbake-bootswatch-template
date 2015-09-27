@@ -24,9 +24,9 @@
 
 	</div> <!-- post -->
 
-	<hr>
-
 	<#include "share-post.ftl">
+
+	<hr/>
 
 	<div id="disqus_thread"></div>
 

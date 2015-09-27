@@ -3,7 +3,7 @@
 	<#include "menu.ftl">
 
 	<div class="page-header">
-		<h1><i class="fa fa-archive"></i>Blog Archive</h1>
+		<h1><i class="fa fa-archive"></i>&nbsp;Blog Archive</h1>
 	</div>
 	<div class="col-lg-4">
 		<#list published_posts as post>
