@@ -1,7 +1,12 @@
 JBake Bootstrap 3.3.5 / Bootswatch template
 =====================================
 
-A [Bootstrap](http://getbootstrap.com/) 3.3.5 template with [Bootswatch](http://bootswatch.com/) for [JBake](http://jbake.org/) with [Disqus](http://disqus.com/) comments.
+A [Bootstrap](http://getbootstrap.com/) 3.3.5 freemarker template with [Bootswatch](http://bootswatch.com/) for [JBake](http://jbake.org/) with [Disqus](http://disqus.com/) comments.
+
+JS/CSS are not packaged in this template:
+* Bootstrap/bootswatch js/css are provided by [BootstrapCDN](http://www.bootstrapcdn.com/)
+* fontawesome css is provided by [BootstrapCDN](http://www.bootstrapcdn.com/)
+* jQuery js is provided by [jquery](http://code.jquery.com/).
 
 ### Compatibility
 
@@ -104,3 +109,4 @@ share.twitter=@YourTwitter
 - [Bootstrap](http://getbootstrap.com/)
 - [Bootswatch](http://bootswatch.com/)
 - [JBake](http://jbake.org/)
+- [BootstrapCDN](http://www.bootstrapcdn.com/)
