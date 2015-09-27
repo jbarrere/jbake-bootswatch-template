@@ -5,7 +5,7 @@
 	<div class="post">
 
 		<div class="page-header">
-			<h1><i class="fa fa-comment"></i>&nbsp;${content.title}</h1>
+			<h1><i class="fa fa-comment"></i>&nbsp;<#escape x as x?xml>${content.title}</#escape></h1>
 		</div>
 
 		<p class="post-info">

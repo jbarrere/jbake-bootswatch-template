@@ -18,7 +18,7 @@
 			<ul class="list-group">
 		</#if>
 
-			<li class="list-group-item">${post.date?string(config.tags_dateformat)} - <a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${post.uri}">${post.title}</a></li>
+			<li class="list-group-item">${post.date?string(config.tags_dateformat)} - <a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${post.uri}"><#escape x as x?xml>${post.title}</#escape></a></li>
 			<#assign last_month = post.date?string("MMMM yyyy")>
 		</#list>
 		</ul>

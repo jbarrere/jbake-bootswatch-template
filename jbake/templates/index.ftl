@@ -6,7 +6,7 @@
 		<#if (post.status == "published")>
 			<div class="post">
 				<a href="<#if (content.rootpath)??>${content.rootpath}<#else></#if>${post.uri}">
-					<h1><i class="fa fa-comment-o"></i>&nbsp;${post.title}</h1>
+					<h1><i class="fa fa-comment-o"></i>&nbsp;<#escape x as x?xml>${post.title}</#escape></h1>
 				</a>
 				<p class="post-info">
 					<i class="fa fa-calendar-o"></i>&nbsp;
